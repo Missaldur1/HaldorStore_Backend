@@ -1,0 +1,182 @@
+/* ======================================================
+   HALDOR STORE – ADMIN THEME (Dark Premium Nordic v4)
+   Profesional, elegante, minimal, inspirado en tu front
+   ====================================================== */
+
+/* ------ VARIABLES ------ */
+:root {
+    --bg-dark: #0D0E11;
+    --bg-panel: #16171D;
+    --bg-section: #1F2027;
+    --bg-header: #0F1117;
+
+    --accent-amber: #FBBF24;
+    --accent-amber-soft: #fcd34d;
+
+    --accent-blue: #4C83FF;
+    --accent-blue-soft: rgba(76,131,255,0.10);
+    --accent-cyan: #4DD4FF;
+
+    --text-light: #F3F4F6;
+    --text-muted: #A1A1AA;
+
+    --border-color: #24262F;
+}
+
+/* ------ GLOBAL ------ */
+body {
+    background: linear-gradient(
+        130deg,
+        #0d0e11 0%,
+        #11131a 40%,
+        #0f1117 70%,
+        rgba(76, 131, 255, 0.10) 100%
+    ) !important;
+    color: var(--text-light) !important;
+    font-family: Inter, sans-serif;
+}
+
+/* ======================================================
+   HEADER
+   ====================================================== */
+
+#header {
+    background: #0F1117;
+    padding: 16px 22px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 4px 20px rgba(76,131,255,0.15);
+}
+
+.admin-branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-logo {
+    height: 34px;
+    width: 34px;
+    padding: 4px;
+    border-radius: 10px;
+    background: #1A1C23;
+    border: 1px solid #2A2C33;
+    box-shadow: 0 0 12px rgba(76,131,255,0.25);
+}
+
+#branding h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+    color: white !important;
+}
+
+/* LINKS SUPERIORES */
+#user-tools a {
+    color: var(--accent-cyan) !important;
+}
+
+#user-tools a:hover {
+    color: var(--accent-amber) !important;
+}
+
+/* ======================================================
+   MÓDULOS
+   ====================================================== */
+
+.module h2,
+.module caption {
+    background: rgba(255,255,255,0.02) !important;
+    color: var(--accent-cyan) !important;
+    padding: 10px 14px !important;
+    font-weight: 600;
+    border-left: 2px solid var(--accent-amber);
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+}
+
+/* ======================================================
+   PANEL LATERAL
+   ====================================================== */
+
+#content-related {
+    background: var(--bg-panel) !important;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+#content-related h2 {
+    background: rgba(255,255,255,0.04) !important;
+    color: var(--accent-cyan) !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+/* ======================================================
+   ENLACES
+   ====================================================== */
+
+a {
+    color: var(--accent-cyan) !important;
+}
+
+a:hover {
+    color: var(--accent-amber) !important;
+    text-decoration: none !important;
+}
+
+/* ======================================================
+   TABLAS
+   ====================================================== */
+
+table {
+    background: var(--bg-panel) !important;
+    border-color: var(--border-color) !important;
+    border-radius: 8px !important;
+}
+
+table thead th {
+    background: var(--bg-section) !important;
+    color: var(--text-light) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:nth-child(even) {
+    background: #14151a !important;
+}
+
+table tbody tr:hover {
+    background: rgba(76,131,255,0.12) !important;
+    transition: background 0.15s ease;
+}
+
+/* ======================================================
+   BOTONES
+   ====================================================== */
+
+.button,
+.submit-row input {
+    background: rgba(76,131,255,0.85) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 8px 14px !important;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.button:hover,
+.submit-row input:hover {
+    background: var(--accent-cyan) !important;
+}
+
+/* ======================================================
+   LOGIN PAGE
+   ====================================================== */
+
+.login #container {
+    background: var(--bg-panel) !important;
+    border-radius: 12px !important;
+    padding: 40px !important;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}

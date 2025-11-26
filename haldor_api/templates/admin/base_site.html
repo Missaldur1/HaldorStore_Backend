@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}Haldor Store Admin{% endblock %}
+
+{% block extrastyle %}
+<link rel="icon" type="image/svg+xml" href="{% static 'admin/bird.svg' %}">
+<link rel="stylesheet" href="{% static 'admin/custom.css' %}">
+{% endblock %}
+
+{% block branding %}
+<div id="branding" class="admin-branding">
+    <img src="{% static 'admin/bird.svg' %}" alt="Logo" class="admin-logo">
+    <h1 id="site-name">Haldor Store Admin</h1>
+</div>
+{% endblock %}
