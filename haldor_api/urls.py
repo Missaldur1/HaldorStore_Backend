@@ -12,6 +12,9 @@ urlpatterns = [
 
     # CATALOGO (categorías y productos)
     path('api/catalog/', include('catalog.urls')),
+
+    # DIRECCIONES
+    path("api/locations/", include("locations.urls")),
 ]
 
 if settings.DEBUG:
